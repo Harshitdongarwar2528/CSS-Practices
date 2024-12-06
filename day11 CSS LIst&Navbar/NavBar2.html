@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar without bullets</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 1px;
+            margin: 1px;
+            width: 100px;
+            background-color: rgb(204, 210, 210);
+        }
+        li a{
+         display: block;
+         padding: 8px 16px;
+         text-decoration: none;
+         color: rgb(33, 37, 37);
+        }
+
+        li a.active{
+            background-color: rgb(203, 130, 193);
+            color: rgb(226, 226, 226);
+        }
+        li a:hover:not(.active){
+            background-color: rgb(3, 3, 3);
+            color: rgb(248, 242, 242);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="default.html">home</a></li>
+        <li><a href="#news">news</a></li>
+        <li><a href="# contact">contact</a></li>
+        <li><a href="#about">about</a></li>
+    </ul>
+</body>
+</html>
